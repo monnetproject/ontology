@@ -10,16 +10,13 @@ import eu.monnetproject.label.uri.*;
 import eu.monnetproject.label.xbrl.XBRLLabelExtractionPolicy;
 import eu.monnetproject.lang.*;
 import eu.monnetproject.ontology.*;
-import eu.monnetproject.util.Logging;
 
 import java.net.*;
 import java.util.*;
-import eu.monnetproject.util.Logger;
 
 @Component(provide = LabelExtractorFactory.class)
 public class LabelExtractorFactoryImpl implements LabelExtractorFactory {
 
-    private Logger log = Logging.getLogger(this);
 
     @Override
     public LabelExtractor getExtractor(Collection<URI> extraURIs, boolean fallback, boolean inferLang) {

@@ -8,7 +8,7 @@
         <version>1.13.1-SNAPSHOT</version>
         <relativePath>..</relativePath>
     </parent>
-    <artifactId>nlp.owlapi</artifactId>
+    <artifactId>ontology.owlapi</artifactId>
     <packaging>bundle</packaging>
 
     <name>eu.monnetproject.ontology.owlapi OSGi Bundle</name>

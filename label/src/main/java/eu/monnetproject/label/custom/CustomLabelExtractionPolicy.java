@@ -2,21 +2,18 @@ package eu.monnetproject.label.custom;
 
 import java.net.URI;
 import java.util.*;
-import eu.monnetproject.util.Logger;
 
 import eu.monnetproject.lang.Language;
 
 import eu.monnetproject.label.LabelExtractor;
 
 import eu.monnetproject.ontology.*;
-import eu.monnetproject.util.Logging;
 
 import aQute.bnd.annotation.component.*;
 
 //@Component(factory="eu.monnetproject.lep.custom")
 public class CustomLabelExtractionPolicy implements LabelExtractor {
 
-    private Logger log = Logging.getLogger(this);
     public URI label;
 
     public CustomLabelExtractionPolicy() {

@@ -9,7 +9,7 @@
         <version>1.13.1-SNAPSHOT</version>
         <relativePath>..</relativePath>
     </parent>
-    <artifactId>nlp.label</artifactId>
+    <artifactId>ontology.label</artifactId>
     <packaging>bundle</packaging>
 
     <name>eu.monnetproject.ontology.label OSGi Bundle</name>
@@ -45,7 +45,7 @@
         </dependency>
         <dependency>
             <groupId>${project.groupId}</groupId>
-            <artifactId>nlp.owlapi</artifactId>
+            <artifactId>ontology.owlapi</artifactId>
             <version>${project.version}</version>
             <scope>test</scope>
         </dependency>
@@ -54,11 +54,11 @@
             <artifactId>framework.services</artifactId>
             <version>${project.version}</version>
         </dependency>
-        <dependency>
+<!--        <dependency>
             <groupId>${project.groupId}</groupId>
             <artifactId>framework.util</artifactId>
             <version>${project.version}</version>
-        </dependency>
+        </dependency>-->
     </dependencies>
 
     <build>

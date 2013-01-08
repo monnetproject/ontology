@@ -4,12 +4,9 @@ import aQute.bnd.annotation.component.*;
 import eu.monnetproject.label.*;
 import eu.monnetproject.lang.*;
 import org.knallgrau.utils.textcat.*;
-import eu.monnetproject.util.Logger;
-import eu.monnetproject.util.Logging;
 
 @Component(provide=LanguageInferrer.class)
 public class TextCatInferrer implements LanguageInferrer {
-	private final Logger log = Logging.getLogger(this);
 	private final TextCategorizer tc = new TextCategorizer();
 	
 	public Language getLang(String label) {
@@ -47,8 +44,7 @@ public class TextCatInferrer implements LanguageInferrer {
 		} else if(l.equals("swedish")) {
 			return Language.SWEDISH;
 		} else {
-			log.warning("Unexpected return from TextCat " + l + " treating as unknown");
-			return null;
+			throw new RuntimeException("Unexpected return from TextCat " + l + " treating as unknown");
 		}
 	}
 }
