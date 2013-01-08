@@ -1,0 +1,81 @@
+
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>eu.monnetproject</groupId>
+        <artifactId>project</artifactId>
+        <version>1.13.1-SNAPSHOT</version>
+        <relativePath>..</relativePath>
+    </parent>
+    <artifactId>nlp.label</artifactId>
+    <packaging>bundle</packaging>
+
+    <name>eu.monnetproject.nlp.label OSGi Bundle</name>
+       
+    <dependencies>
+        <dependency>
+            <groupId>org.apache.felix</groupId>
+            <artifactId>org.osgi.core</artifactId>
+            <version>1.4.0</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>eu.monnetproject</groupId>
+            <artifactId>ontology</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>biz.aQute</groupId>
+            <artifactId>bnd</artifactId>
+            <version>0.0.384</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.knallgrau</groupId>
+            <artifactId>textcat</artifactId>
+            <version>1.0.1</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.felix</groupId>
+            <artifactId>org.osgi.compendium</artifactId>
+            <version>1.4.0</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>${project.groupId}</groupId>
+            <artifactId>nlp.owlapi</artifactId>
+            <version>${project.version}</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>${project.groupId}</groupId>
+            <artifactId>framework.services</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>${project.groupId}</groupId>
+            <artifactId>framework.util</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.felix</groupId>
+                <artifactId>maven-bundle-plugin</artifactId>
+                <extensions>true</extensions>
+                <configuration>
+                    <instructions>
+                      <Import-Package>eu.monnetproject.*,*;resolution:=optional</Import-Package>
+                      <Embed-Dependency>textcat</Embed-Dependency>
+                        <Export-Package>eu.monnetproject.label.custom,eu.monnetproject.label.impl,eu.monnetproject.label.rdf,eu.monnetproject.label.skos,eu.monnetproject.label.textcat,eu.monnetproject.label.uri,eu.monnetproject.label.xbrl</Export-Package>
+                        <Private-Package>eu.monnetproject.label.custom.*,eu.monnetproject.label.impl.*,eu.monnetproject.label.rdf.*,eu.monnetproject.label.skos.*,eu.monnetproject.label.textcat.*,eu.monnetproject.label.uri.*,eu.monnetproject.label.xbrl.*</Private-Package>
+                    </instructions>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+</project>

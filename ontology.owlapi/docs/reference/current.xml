@@ -1,0 +1,4039 @@
+<api>
+<package name="eu.monnetproject.ontology.owlapi"
+>
+<class name="OWLAPIAnnotationProperty"
+ extends="eu.monnetproject.ontology.owlapi.OWLAPIEntity"
+ abstract="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<implements name="eu.monnetproject.ontology.AnnotationProperty">
+</implements>
+<constructor name="OWLAPIAnnotationProperty"
+ type="eu.monnetproject.ontology.owlapi.OWLAPIAnnotationProperty"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="wrapped" type="org.semanticweb.owlapi.model.OWLAnnotationProperty">
+</parameter>
+<parameter name="onto" type="org.semanticweb.owlapi.model.OWLOntology">
+</parameter>
+</constructor>
+<method name="addDomain"
+ return="boolean"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="clazz" type="eu.monnetproject.ontology.Class">
+</parameter>
+</method>
+<method name="addEquivalentProperty"
+ return="boolean"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="property" type="eu.monnetproject.ontology.Property">
+</parameter>
+</method>
+<method name="addRange"
+ return="boolean"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="clazzOrDatatype" type="eu.monnetproject.ontology.ClassOrDatatype">
+</parameter>
+</method>
+<method name="addSubPropertyOf"
+ return="boolean"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="property" type="eu.monnetproject.ontology.Property">
+</parameter>
+</method>
+<method name="convertA"
+ return="java.util.Collection&lt;eu.monnetproject.ontology.AnnotationValue&gt;"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="vals" type="java.util.Set&lt;org.semanticweb.owlapi.model.OWLAnnotation&gt;">
+</parameter>
+</method>
+<method name="convertA2LOI"
+ return="java.util.Collection&lt;eu.monnetproject.ontology.LiteralOrIndividual&gt;"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="vals" type="java.util.Set&lt;org.semanticweb.owlapi.model.OWLAnnotation&gt;">
+</parameter>
+</method>
+<method name="convertAP"
+ return="java.util.Collection&lt;eu.monnetproject.ontology.AnnotationProperty&gt;"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="vals" type="java.util.Set&lt;org.semanticweb.owlapi.model.OWLAnnotationProperty&gt;">
+</parameter>
+</method>
+<method name="convertAP2M"
+ return="java.util.Map&lt;eu.monnetproject.ontology.Property, java.util.Collection&lt;eu.monnetproject.ontology.LiteralOrIndividual&gt;&gt;"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="vals" type="java.util.Map&lt;org.semanticweb.owlapi.model.OWLAnnotationProperty, java.util.Set&lt;org.semanticweb.owlapi.model.OWLIndividual&gt;&gt;">
+</parameter>
+</method>
+<method name="convertAP2P"
+ return="java.util.Collection&lt;eu.monnetproject.ontology.Property&gt;"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="vals" type="java.util.Set&lt;org.semanticweb.owlapi.model.OWLAnnotationProperty&gt;">
+</parameter>
+</method>
+<method name="convertC"
+ return="java.util.Collection&lt;eu.monnetproject.ontology.Class&gt;"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="vals" type="java.util.Set&lt;org.semanticweb.owlapi.model.OWLClassExpression&gt;">
+</parameter>
+</method>
+<method name="convertD"
+ return="java.util.Collection&lt;eu.monnetproject.ontology.Datatype&gt;"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="vals" type="java.util.Set&lt;org.semanticweb.owlapi.model.OWLDataRange&gt;">
+</parameter>
+</method>
+<method name="convertDP"
+ return="java.util.Collection&lt;eu.monnetproject.ontology.DatatypeProperty&gt;"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="vals" type="java.util.Set&lt;org.semanticweb.owlapi.model.OWLDataPropertyExpression&gt;">
+</parameter>
+</method>
+<method name="convertDP2M"
+ return="java.util.Map&lt;eu.monnetproject.ontology.Property, java.util.Collection&lt;eu.monnetproject.ontology.LiteralOrIndividual&gt;&gt;"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="vals" type="java.util.Map&lt;org.semanticweb.owlapi.model.OWLDataPropertyExpression, java.util.Set&lt;org.semanticweb.owlapi.model.OWLLiteral&gt;&gt;">
+</parameter>
+</method>
+<method name="convertDP2P"
+ return="java.util.Collection&lt;eu.monnetproject.ontology.Property&gt;"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="vals" type="java.util.Set&lt;org.semanticweb.owlapi.model.OWLDataPropertyExpression&gt;">
+</parameter>
+</method>
+<method name="convertE"
+ return="java.util.Collection&lt;eu.monnetproject.ontology.Entity&gt;"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="protected"
+>
+<parameter name="ents" type="java.util.Set&lt;org.semanticweb.owlapi.model.OWLEntity&gt;">
+</parameter>
+</method>
+<method name="convertI"
+ return="java.util.Collection&lt;eu.monnetproject.ontology.Individual&gt;"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="vals" type="java.util.Set&lt;org.semanticweb.owlapi.model.OWLIndividual&gt;">
+</parameter>
+</method>
+<method name="convertL"
+ return="java.util.Collection&lt;eu.monnetproject.ontology.LiteralValue&gt;"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="vals" type="java.util.Set&lt;org.semanticweb.owlapi.model.OWLLiteral&gt;">
+</parameter>
+</method>
+<method name="convertLOI"
+ return="java.util.Collection&lt;eu.monnetproject.ontology.LiteralOrIndividual&gt;"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="vals" type="java.util.Set">
+</parameter>
+</method>
+<method name="convertOP"
+ return="java.util.Collection&lt;eu.monnetproject.ontology.ObjectProperty&gt;"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="vals" type="java.util.Set&lt;org.semanticweb.owlapi.model.OWLObjectPropertyExpression&gt;">
+</parameter>
+</method>
+<method name="convertOP2M"
+ return="java.util.Map&lt;eu.monnetproject.ontology.Property, java.util.Collection&lt;eu.monnetproject.ontology.LiteralOrIndividual&gt;&gt;"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="vals" type="java.util.Map&lt;org.semanticweb.owlapi.model.OWLObjectPropertyExpression, java.util.Set&lt;org.semanticweb.owlapi.model.OWLIndividual&gt;&gt;">
+</parameter>
+</method>
+<method name="convertOP2P"
+ return="java.util.Collection&lt;eu.monnetproject.ontology.Property&gt;"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="vals" type="java.util.Set&lt;org.semanticweb.owlapi.model.OWLObjectPropertyExpression&gt;">
+</parameter>
+</method>
+<method name="convertP"
+ return="java.util.Collection&lt;eu.monnetproject.ontology.Property&gt;"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="vals" type="java.util.Set&lt;org.semanticweb.owlapi.model.OWLPropertyExpression&gt;">
+</parameter>
+</method>
+<method name="entity"
+ return="org.semanticweb.owlapi.model.OWLEntity"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="protected"
+>
+</method>
+<method name="getDomain"
+ return="java.util.Collection&lt;eu.monnetproject.ontology.Class&gt;"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="getEquivalentProperty"
+ return="java.util.Collection&lt;eu.monnetproject.ontology.Property&gt;"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="getRange"
+ return="java.util.Collection&lt;? extends eu.monnetproject.ontology.ClassOrDatatype&gt;"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="getSubPropertyOf"
+ return="java.util.Collection&lt;eu.monnetproject.ontology.Property&gt;"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="getSuperPropertyOf"
+ return="java.util.Collection&lt;eu.monnetproject.ontology.Property&gt;"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="removeDomain"
+ return="boolean"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="clazz" type="eu.monnetproject.ontology.Class">
+</parameter>
+</method>
+<method name="removeEquivalentProperty"
+ return="boolean"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="property" type="eu.monnetproject.ontology.Property">
+</parameter>
+</method>
+<method name="removeRange"
+ return="boolean"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="clazzOrDatatype" type="eu.monnetproject.ontology.ClassOrDatatype">
+</parameter>
+</method>
+<method name="removeSubPropertyOf"
+ return="boolean"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="property" type="eu.monnetproject.ontology.Property">
+</parameter>
+</method>
+<field name="onto"
+ type="org.semanticweb.owlapi.model.OWLOntology"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="protected"
+>
+</field>
+</class>
+<class name="OWLAPIClass"
+ extends="eu.monnetproject.ontology.owlapi.OWLAPIEntity"
+ abstract="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<implements name="eu.monnetproject.ontology.Class">
+</implements>
+<constructor name="OWLAPIClass"
+ type="eu.monnetproject.ontology.owlapi.OWLAPIClass"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="wrapped" type="org.semanticweb.owlapi.model.OWLClassExpression">
+</parameter>
+<parameter name="onto" type="org.semanticweb.owlapi.model.OWLOntology">
+</parameter>
+</constructor>
+<method name="addDisjointWith"
+ return="boolean"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="clazz2" type="eu.monnetproject.ontology.Class">
+</parameter>
+</method>
+<method name="addEquivalentClass"
+ return="boolean"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="clazz2" type="eu.monnetproject.ontology.Class">
+</parameter>
+</method>
+<method name="addSubClassOf"
+ return="boolean"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="clazz2" type="eu.monnetproject.ontology.Class">
+</parameter>
+</method>
+<method name="cl"
+ return="org.semanticweb.owlapi.model.OWLClass"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="protected"
+>
+</method>
+<method name="convertA"
+ return="java.util.Collection&lt;eu.monnetproject.ontology.AnnotationValue&gt;"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="vals" type="java.util.Set&lt;org.semanticweb.owlapi.model.OWLAnnotation&gt;">
+</parameter>
+</method>
+<method name="convertA2LOI"
+ return="java.util.Collection&lt;eu.monnetproject.ontology.LiteralOrIndividual&gt;"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="vals" type="java.util.Set&lt;org.semanticweb.owlapi.model.OWLAnnotation&gt;">
+</parameter>
+</method>
+<method name="convertAP"
+ return="java.util.Collection&lt;eu.monnetproject.ontology.AnnotationProperty&gt;"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="vals" type="java.util.Set&lt;org.semanticweb.owlapi.model.OWLAnnotationProperty&gt;">
+</parameter>
+</method>
+<method name="convertAP2M"
+ return="java.util.Map&lt;eu.monnetproject.ontology.Property, java.util.Collection&lt;eu.monnetproject.ontology.LiteralOrIndividual&gt;&gt;"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="vals" type="java.util.Map&lt;org.semanticweb.owlapi.model.OWLAnnotationProperty, java.util.Set&lt;org.semanticweb.owlapi.model.OWLIndividual&gt;&gt;">
+</parameter>
+</method>
+<method name="convertAP2P"
+ return="java.util.Collection&lt;eu.monnetproject.ontology.Property&gt;"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="vals" type="java.util.Set&lt;org.semanticweb.owlapi.model.OWLAnnotationProperty&gt;">
+</parameter>
+</method>
+<method name="convertC"
+ return="java.util.Collection&lt;eu.monnetproject.ontology.Class&gt;"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="vals" type="java.util.Set&lt;org.semanticweb.owlapi.model.OWLClassExpression&gt;">
+</parameter>
+</method>
+<method name="convertD"
+ return="java.util.Collection&lt;eu.monnetproject.ontology.Datatype&gt;"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="vals" type="java.util.Set&lt;org.semanticweb.owlapi.model.OWLDataRange&gt;">
+</parameter>
+</method>
+<method name="convertDP"
+ return="java.util.Collection&lt;eu.monnetproject.ontology.DatatypeProperty&gt;"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="vals" type="java.util.Set&lt;org.semanticweb.owlapi.model.OWLDataPropertyExpression&gt;">
+</parameter>
+</method>
+<method name="convertDP2M"
+ return="java.util.Map&lt;eu.monnetproject.ontology.Property, java.util.Collection&lt;eu.monnetproject.ontology.LiteralOrIndividual&gt;&gt;"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="vals" type="java.util.Map&lt;org.semanticweb.owlapi.model.OWLDataPropertyExpression, java.util.Set&lt;org.semanticweb.owlapi.model.OWLLiteral&gt;&gt;">
+</parameter>
+</method>
+<method name="convertDP2P"
+ return="java.util.Collection&lt;eu.monnetproject.ontology.Property&gt;"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="vals" type="java.util.Set&lt;org.semanticweb.owlapi.model.OWLDataPropertyExpression&gt;">
+</parameter>
+</method>
+<method name="convertE"
+ return="java.util.Collection&lt;eu.monnetproject.ontology.Entity&gt;"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="protected"
+>
+<parameter name="ents" type="java.util.Set&lt;org.semanticweb.owlapi.model.OWLEntity&gt;">
+</parameter>
+</method>
+<method name="convertI"
+ return="java.util.Collection&lt;eu.monnetproject.ontology.Individual&gt;"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="vals" type="java.util.Set&lt;org.semanticweb.owlapi.model.OWLIndividual&gt;">
+</parameter>
+</method>
+<method name="convertL"
+ return="java.util.Collection&lt;eu.monnetproject.ontology.LiteralValue&gt;"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="vals" type="java.util.Set&lt;org.semanticweb.owlapi.model.OWLLiteral&gt;">
+</parameter>
+</method>
+<method name="convertLOI"
+ return="java.util.Collection&lt;eu.monnetproject.ontology.LiteralOrIndividual&gt;"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="vals" type="java.util.Set">
+</parameter>
+</method>
+<method name="convertOP"
+ return="java.util.Collection&lt;eu.monnetproject.ontology.ObjectProperty&gt;"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="vals" type="java.util.Set&lt;org.semanticweb.owlapi.model.OWLObjectPropertyExpression&gt;">
+</parameter>
+</method>
+<method name="convertOP2M"
+ return="java.util.Map&lt;eu.monnetproject.ontology.Property, java.util.Collection&lt;eu.monnetproject.ontology.LiteralOrIndividual&gt;&gt;"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="vals" type="java.util.Map&lt;org.semanticweb.owlapi.model.OWLObjectPropertyExpression, java.util.Set&lt;org.semanticweb.owlapi.model.OWLIndividual&gt;&gt;">
+</parameter>
+</method>
+<method name="convertOP2P"
+ return="java.util.Collection&lt;eu.monnetproject.ontology.Property&gt;"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="vals" type="java.util.Set&lt;org.semanticweb.owlapi.model.OWLObjectPropertyExpression&gt;">
+</parameter>
+</method>
+<method name="convertP"
+ return="java.util.Collection&lt;eu.monnetproject.ontology.Property&gt;"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="vals" type="java.util.Set&lt;org.semanticweb.owlapi.model.OWLPropertyExpression&gt;">
+</parameter>
+</method>
+<method name="entity"
+ return="org.semanticweb.owlapi.model.OWLEntity"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="protected"
+>
+</method>
+<method name="getDisjointWith"
+ return="java.util.Collection&lt;eu.monnetproject.ontology.Class&gt;"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="getEquivalentClass"
+ return="java.util.Collection&lt;eu.monnetproject.ontology.Class&gt;"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="getIsDomainOf"
+ return="java.util.Collection&lt;eu.monnetproject.ontology.Property&gt;"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="getIsRangeOf"
+ return="java.util.Collection&lt;eu.monnetproject.ontology.ObjectProperty&gt;"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="getIsTypeOf"
+ return="java.util.Collection&lt;eu.monnetproject.ontology.Individual&gt;"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="getSubClassOf"
+ return="java.util.Collection&lt;eu.monnetproject.ontology.Class&gt;"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="getSuperClassOf"
+ return="java.util.Collection&lt;eu.monnetproject.ontology.Class&gt;"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="removeDisjointWith"
+ return="boolean"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="clazz2" type="eu.monnetproject.ontology.Class">
+</parameter>
+</method>
+<method name="removeEquivalentClass"
+ return="boolean"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="clazz2" type="eu.monnetproject.ontology.Class">
+</parameter>
+</method>
+<method name="removeSubClassOf"
+ return="boolean"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="clazz2" type="eu.monnetproject.ontology.Class">
+</parameter>
+</method>
+<field name="onto"
+ type="org.semanticweb.owlapi.model.OWLOntology"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="protected"
+>
+</field>
+</class>
+<class name="OWLAPIDatatype"
+ extends="java.lang.Object"
+ abstract="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<implements name="eu.monnetproject.ontology.Datatype">
+</implements>
+<constructor name="OWLAPIDatatype"
+ type="eu.monnetproject.ontology.owlapi.OWLAPIDatatype"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="datatype" type="org.semanticweb.owlapi.model.OWLDatatype">
+</parameter>
+<parameter name="onto" type="org.semanticweb.owlapi.model.OWLOntology">
+</parameter>
+</constructor>
+<method name="getIsRangeOf"
+ return="java.util.Collection&lt;eu.monnetproject.ontology.DatatypeProperty&gt;"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="getURI"
+ return="java.net.URI"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+</class>
+<class name="OWLAPIDatatypeProperty"
+ extends="eu.monnetproject.ontology.owlapi.OWLAPIEntity"
+ abstract="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<implements name="eu.monnetproject.ontology.DatatypeProperty">
+</implements>
+<constructor name="OWLAPIDatatypeProperty"
+ type="eu.monnetproject.ontology.owlapi.OWLAPIDatatypeProperty"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="wrapped" type="org.semanticweb.owlapi.model.OWLDataProperty">
+</parameter>
+<parameter name="onto" type="org.semanticweb.owlapi.model.OWLOntology">
+</parameter>
+</constructor>
+<method name="addDomain"
+ return="boolean"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="clazz" type="eu.monnetproject.ontology.Class">
+</parameter>
+</method>
+<method name="addEquivalentProperty"
+ return="boolean"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="property" type="eu.monnetproject.ontology.Property">
+</parameter>
+</method>
+<method name="addRange"
+ return="boolean"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="clazzOrDatatype" type="eu.monnetproject.ontology.ClassOrDatatype">
+</parameter>
+</method>
+<method name="addSubPropertyOf"
+ return="boolean"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="property" type="eu.monnetproject.ontology.Property">
+</parameter>
+</method>
+<method name="convertA"
+ return="java.util.Collection&lt;eu.monnetproject.ontology.AnnotationValue&gt;"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="vals" type="java.util.Set&lt;org.semanticweb.owlapi.model.OWLAnnotation&gt;">
+</parameter>
+</method>
+<method name="convertA2LOI"
+ return="java.util.Collection&lt;eu.monnetproject.ontology.LiteralOrIndividual&gt;"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="vals" type="java.util.Set&lt;org.semanticweb.owlapi.model.OWLAnnotation&gt;">
+</parameter>
+</method>
+<method name="convertAP"
+ return="java.util.Collection&lt;eu.monnetproject.ontology.AnnotationProperty&gt;"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="vals" type="java.util.Set&lt;org.semanticweb.owlapi.model.OWLAnnotationProperty&gt;">
+</parameter>
+</method>
+<method name="convertAP2M"
+ return="java.util.Map&lt;eu.monnetproject.ontology.Property, java.util.Collection&lt;eu.monnetproject.ontology.LiteralOrIndividual&gt;&gt;"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="vals" type="java.util.Map&lt;org.semanticweb.owlapi.model.OWLAnnotationProperty, java.util.Set&lt;org.semanticweb.owlapi.model.OWLIndividual&gt;&gt;">
+</parameter>
+</method>
+<method name="convertAP2P"
+ return="java.util.Collection&lt;eu.monnetproject.ontology.Property&gt;"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="vals" type="java.util.Set&lt;org.semanticweb.owlapi.model.OWLAnnotationProperty&gt;">
+</parameter>
+</method>
+<method name="convertC"
+ return="java.util.Collection&lt;eu.monnetproject.ontology.Class&gt;"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="vals" type="java.util.Set&lt;org.semanticweb.owlapi.model.OWLClassExpression&gt;">
+</parameter>
+</method>
+<method name="convertD"
+ return="java.util.Collection&lt;eu.monnetproject.ontology.Datatype&gt;"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="vals" type="java.util.Set&lt;org.semanticweb.owlapi.model.OWLDataRange&gt;">
+</parameter>
+</method>
+<method name="convertDP"
+ return="java.util.Collection&lt;eu.monnetproject.ontology.DatatypeProperty&gt;"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="vals" type="java.util.Set&lt;org.semanticweb.owlapi.model.OWLDataPropertyExpression&gt;">
+</parameter>
+</method>
+<method name="convertDP2M"
+ return="java.util.Map&lt;eu.monnetproject.ontology.Property, java.util.Collection&lt;eu.monnetproject.ontology.LiteralOrIndividual&gt;&gt;"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="vals" type="java.util.Map&lt;org.semanticweb.owlapi.model.OWLDataPropertyExpression, java.util.Set&lt;org.semanticweb.owlapi.model.OWLLiteral&gt;&gt;">
+</parameter>
+</method>
+<method name="convertDP2P"
+ return="java.util.Collection&lt;eu.monnetproject.ontology.Property&gt;"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="vals" type="java.util.Set&lt;org.semanticweb.owlapi.model.OWLDataPropertyExpression&gt;">
+</parameter>
+</method>
+<method name="convertE"
+ return="java.util.Collection&lt;eu.monnetproject.ontology.Entity&gt;"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="protected"
+>
+<parameter name="ents" type="java.util.Set&lt;org.semanticweb.owlapi.model.OWLEntity&gt;">
+</parameter>
+</method>
+<method name="convertI"
+ return="java.util.Collection&lt;eu.monnetproject.ontology.Individual&gt;"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="vals" type="java.util.Set&lt;org.semanticweb.owlapi.model.OWLIndividual&gt;">
+</parameter>
+</method>
+<method name="convertL"
+ return="java.util.Collection&lt;eu.monnetproject.ontology.LiteralValue&gt;"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="vals" type="java.util.Set&lt;org.semanticweb.owlapi.model.OWLLiteral&gt;">
+</parameter>
+</method>
+<method name="convertLOI"
+ return="java.util.Collection&lt;eu.monnetproject.ontology.LiteralOrIndividual&gt;"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="vals" type="java.util.Set">
+</parameter>
+</method>
+<method name="convertOP"
+ return="java.util.Collection&lt;eu.monnetproject.ontology.ObjectProperty&gt;"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="vals" type="java.util.Set&lt;org.semanticweb.owlapi.model.OWLObjectPropertyExpression&gt;">
+</parameter>
+</method>
+<method name="convertOP2M"
+ return="java.util.Map&lt;eu.monnetproject.ontology.Property, java.util.Collection&lt;eu.monnetproject.ontology.LiteralOrIndividual&gt;&gt;"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="vals" type="java.util.Map&lt;org.semanticweb.owlapi.model.OWLObjectPropertyExpression, java.util.Set&lt;org.semanticweb.owlapi.model.OWLIndividual&gt;&gt;">
+</parameter>
+</method>
+<method name="convertOP2P"
+ return="java.util.Collection&lt;eu.monnetproject.ontology.Property&gt;"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="vals" type="java.util.Set&lt;org.semanticweb.owlapi.model.OWLObjectPropertyExpression&gt;">
+</parameter>
+</method>
+<method name="convertP"
+ return="java.util.Collection&lt;eu.monnetproject.ontology.Property&gt;"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="vals" type="java.util.Set&lt;org.semanticweb.owlapi.model.OWLPropertyExpression&gt;">
+</parameter>
+</method>
+<method name="entity"
+ return="org.semanticweb.owlapi.model.OWLEntity"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="protected"
+>
+</method>
+<method name="getDomain"
+ return="java.util.Collection&lt;eu.monnetproject.ontology.Class&gt;"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="getEquivalentProperty"
+ return="java.util.Collection&lt;eu.monnetproject.ontology.Property&gt;"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="getRange"
+ return="java.util.Collection&lt;eu.monnetproject.ontology.Datatype&gt;"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="getSubPropertyOf"
+ return="java.util.Collection&lt;eu.monnetproject.ontology.Property&gt;"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="getSuperPropertyOf"
+ return="java.util.Collection&lt;eu.monnetproject.ontology.Property&gt;"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="prop"
+ return="org.semanticweb.owlapi.model.OWLDataProperty"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="protected"
+>
+</method>
+<method name="removeDomain"
+ return="boolean"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="clazz" type="eu.monnetproject.ontology.Class">
+</parameter>
+</method>
+<method name="removeEquivalentProperty"
+ return="boolean"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="property" type="eu.monnetproject.ontology.Property">
+</parameter>
+</method>
+<method name="removeRange"
+ return="boolean"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="clazzOrDatatype" type="eu.monnetproject.ontology.ClassOrDatatype">
+</parameter>
+</method>
+<method name="removeSubPropertyOf"
+ return="boolean"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="property" type="eu.monnetproject.ontology.Property">
+</parameter>
+</method>
+<field name="onto"
+ type="org.semanticweb.owlapi.model.OWLOntology"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="protected"
+>
+</field>
+</class>
+<class name="OWLAPIEntity"
+ extends="eu.monnetproject.ontology.owlapi.OWLAPI"
+ abstract="true"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<implements name="eu.monnetproject.ontology.Entity">
+</implements>
+<constructor name="OWLAPIEntity"
+ type="eu.monnetproject.ontology.owlapi.OWLAPIEntity"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="protected"
+>
+<parameter name="onto" type="org.semanticweb.owlapi.model.OWLOntology">
+</parameter>
+</constructor>
+<method name="addAnnotation"
+ return="boolean"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="property" type="eu.monnetproject.ontology.AnnotationProperty">
+</parameter>
+<parameter name="annotation" type="eu.monnetproject.ontology.AnnotationValue">
+</parameter>
+</method>
+<method name="convert"
+ return="org.semanticweb.owlapi.model.OWLAnnotationProperty"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="protected"
+>
+<parameter name="prop" type="eu.monnetproject.ontology.AnnotationProperty">
+</parameter>
+</method>
+<method name="convert"
+ return="org.semanticweb.owlapi.model.OWLAnnotationValue"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="protected"
+>
+<parameter name="av" type="eu.monnetproject.ontology.AnnotationValue">
+</parameter>
+</method>
+<method name="convert"
+ return="org.semanticweb.owlapi.model.OWLClassExpression"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="protected"
+>
+<parameter name="prop" type="eu.monnetproject.ontology.Class">
+</parameter>
+</method>
+<method name="convert"
+ return="org.semanticweb.owlapi.model.OWLDatatype"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="protected"
+>
+<parameter name="prop" type="eu.monnetproject.ontology.Datatype">
+</parameter>
+</method>
+<method name="convert"
+ return="org.semanticweb.owlapi.model.OWLDataProperty"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="protected"
+>
+<parameter name="prop" type="eu.monnetproject.ontology.DatatypeProperty">
+</parameter>
+</method>
+<method name="convert"
+ return="org.semanticweb.owlapi.model.OWLNamedIndividual"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="protected"
+>
+<parameter name="prop" type="eu.monnetproject.ontology.Individual">
+</parameter>
+</method>
+<method name="convert"
+ return="org.semanticweb.owlapi.model.OWLLiteral"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="protected"
+>
+<parameter name="prop" type="eu.monnetproject.ontology.LiteralValue">
+</parameter>
+</method>
+<method name="convert"
+ return="org.semanticweb.owlapi.model.OWLObjectProperty"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="protected"
+>
+<parameter name="prop" type="eu.monnetproject.ontology.ObjectProperty">
+</parameter>
+</method>
+<method name="convertA"
+ return="java.util.Collection&lt;eu.monnetproject.ontology.AnnotationValue&gt;"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="vals" type="java.util.Set&lt;org.semanticweb.owlapi.model.OWLAnnotation&gt;">
+</parameter>
+</method>
+<method name="convertA2LOI"
+ return="java.util.Collection&lt;eu.monnetproject.ontology.LiteralOrIndividual&gt;"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="vals" type="java.util.Set&lt;org.semanticweb.owlapi.model.OWLAnnotation&gt;">
+</parameter>
+</method>
+<method name="convertAP"
+ return="java.util.Collection&lt;eu.monnetproject.ontology.AnnotationProperty&gt;"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="vals" type="java.util.Set&lt;org.semanticweb.owlapi.model.OWLAnnotationProperty&gt;">
+</parameter>
+</method>
+<method name="convertAP2M"
+ return="java.util.Map&lt;eu.monnetproject.ontology.Property, java.util.Collection&lt;eu.monnetproject.ontology.LiteralOrIndividual&gt;&gt;"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="vals" type="java.util.Map&lt;org.semanticweb.owlapi.model.OWLAnnotationProperty, java.util.Set&lt;org.semanticweb.owlapi.model.OWLIndividual&gt;&gt;">
+</parameter>
+</method>
+<method name="convertAP2P"
+ return="java.util.Collection&lt;eu.monnetproject.ontology.Property&gt;"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="vals" type="java.util.Set&lt;org.semanticweb.owlapi.model.OWLAnnotationProperty&gt;">
+</parameter>
+</method>
+<method name="convertC"
+ return="java.util.Collection&lt;eu.monnetproject.ontology.Class&gt;"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="vals" type="java.util.Set&lt;org.semanticweb.owlapi.model.OWLClassExpression&gt;">
+</parameter>
+</method>
+<method name="convertD"
+ return="java.util.Collection&lt;eu.monnetproject.ontology.Datatype&gt;"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="vals" type="java.util.Set&lt;org.semanticweb.owlapi.model.OWLDataRange&gt;">
+</parameter>
+</method>
+<method name="convertDP"
+ return="java.util.Collection&lt;eu.monnetproject.ontology.DatatypeProperty&gt;"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="vals" type="java.util.Set&lt;org.semanticweb.owlapi.model.OWLDataPropertyExpression&gt;">
+</parameter>
+</method>
+<method name="convertDP2M"
+ return="java.util.Map&lt;eu.monnetproject.ontology.Property, java.util.Collection&lt;eu.monnetproject.ontology.LiteralOrIndividual&gt;&gt;"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="vals" type="java.util.Map&lt;org.semanticweb.owlapi.model.OWLDataPropertyExpression, java.util.Set&lt;org.semanticweb.owlapi.model.OWLLiteral&gt;&gt;">
+</parameter>
+</method>
+<method name="convertDP2P"
+ return="java.util.Collection&lt;eu.monnetproject.ontology.Property&gt;"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="vals" type="java.util.Set&lt;org.semanticweb.owlapi.model.OWLDataPropertyExpression&gt;">
+</parameter>
+</method>
+<method name="convertE"
+ return="java.util.Collection&lt;eu.monnetproject.ontology.Entity&gt;"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="protected"
+>
+<parameter name="ents" type="java.util.Set&lt;org.semanticweb.owlapi.model.OWLEntity&gt;">
+</parameter>
+</method>
+<method name="convertI"
+ return="java.util.Collection&lt;eu.monnetproject.ontology.Individual&gt;"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="vals" type="java.util.Set&lt;org.semanticweb.owlapi.model.OWLIndividual&gt;">
+</parameter>
+</method>
+<method name="convertL"
+ return="java.util.Collection&lt;eu.monnetproject.ontology.LiteralValue&gt;"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="vals" type="java.util.Set&lt;org.semanticweb.owlapi.model.OWLLiteral&gt;">
+</parameter>
+</method>
+<method name="convertLOI"
+ return="java.util.Collection&lt;eu.monnetproject.ontology.LiteralOrIndividual&gt;"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="vals" type="java.util.Set">
+</parameter>
+</method>
+<method name="convertOP"
+ return="java.util.Collection&lt;eu.monnetproject.ontology.ObjectProperty&gt;"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="vals" type="java.util.Set&lt;org.semanticweb.owlapi.model.OWLObjectPropertyExpression&gt;">
+</parameter>
+</method>
+<method name="convertOP2M"
+ return="java.util.Map&lt;eu.monnetproject.ontology.Property, java.util.Collection&lt;eu.monnetproject.ontology.LiteralOrIndividual&gt;&gt;"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="vals" type="java.util.Map&lt;org.semanticweb.owlapi.model.OWLObjectPropertyExpression, java.util.Set&lt;org.semanticweb.owlapi.model.OWLIndividual&gt;&gt;">
+</parameter>
+</method>
+<method name="convertOP2P"
+ return="java.util.Collection&lt;eu.monnetproject.ontology.Property&gt;"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="vals" type="java.util.Set&lt;org.semanticweb.owlapi.model.OWLObjectPropertyExpression&gt;">
+</parameter>
+</method>
+<method name="convertP"
+ return="java.util.Collection&lt;eu.monnetproject.ontology.Property&gt;"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="vals" type="java.util.Set&lt;org.semanticweb.owlapi.model.OWLPropertyExpression&gt;">
+</parameter>
+</method>
+<method name="entity"
+ return="org.semanticweb.owlapi.model.OWLEntity"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="protected"
+>
+</method>
+<method name="getAnnotationValues"
+ return="java.util.Collection&lt;eu.monnetproject.ontology.AnnotationValue&gt;"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="property" type="eu.monnetproject.ontology.AnnotationProperty">
+</parameter>
+</method>
+<method name="getAnnotations"
+ return="java.util.Map&lt;eu.monnetproject.ontology.AnnotationProperty, java.util.Collection&lt;eu.monnetproject.ontology.AnnotationValue&gt;&gt;"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="getID"
+ return="java.lang.String"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="getOntology"
+ return="eu.monnetproject.ontology.Ontology"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="getPuns"
+ return="java.util.Collection&lt;eu.monnetproject.ontology.Entity&gt;"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="getURI"
+ return="java.net.URI"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="isChange"
+ return="boolean"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="protected"
+>
+<parameter name="changes" type="java.util.List&lt;org.semanticweb.owlapi.model.OWLOntologyChange&gt;">
+</parameter>
+</method>
+<method name="removeAnnotation"
+ return="boolean"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="property" type="eu.monnetproject.ontology.AnnotationProperty">
+</parameter>
+<parameter name="annotation" type="eu.monnetproject.ontology.AnnotationValue">
+</parameter>
+</method>
+<field name="factory"
+ type="org.semanticweb.owlapi.model.OWLDataFactory"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="true"
+ deprecated="not deprecated"
+ visibility="protected"
+>
+</field>
+<field name="manager"
+ type="org.semanticweb.owlapi.model.OWLOntologyManager"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="true"
+ deprecated="not deprecated"
+ visibility="protected"
+>
+</field>
+<field name="onto"
+ type="org.semanticweb.owlapi.model.OWLOntology"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="protected"
+>
+</field>
+</class>
+<class name="OWLAPIIndividual"
+ extends="eu.monnetproject.ontology.owlapi.OWLAPIEntity"
+ abstract="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<implements name="eu.monnetproject.ontology.Individual">
+</implements>
+<constructor name="OWLAPIIndividual"
+ type="eu.monnetproject.ontology.owlapi.OWLAPIIndividual"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="wrapped" type="org.semanticweb.owlapi.model.OWLNamedIndividual">
+</parameter>
+<parameter name="onto" type="org.semanticweb.owlapi.model.OWLOntology">
+</parameter>
+</constructor>
+<method name="addDifferentFrom"
+ return="boolean"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="individual" type="eu.monnetproject.ontology.Individual">
+</parameter>
+</method>
+<method name="addProperty"
+ return="boolean"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="property" type="eu.monnetproject.ontology.Property">
+</parameter>
+<parameter name="value" type="eu.monnetproject.ontology.LiteralOrIndividual">
+</parameter>
+</method>
+<method name="addSameAs"
+ return="boolean"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="individual" type="eu.monnetproject.ontology.Individual">
+</parameter>
+</method>
+<method name="addType"
+ return="boolean"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="clazz" type="eu.monnetproject.ontology.Class">
+</parameter>
+</method>
+<method name="convertA"
+ return="java.util.Collection&lt;eu.monnetproject.ontology.AnnotationValue&gt;"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="vals" type="java.util.Set&lt;org.semanticweb.owlapi.model.OWLAnnotation&gt;">
+</parameter>
+</method>
+<method name="convertA2LOI"
+ return="java.util.Collection&lt;eu.monnetproject.ontology.LiteralOrIndividual&gt;"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="vals" type="java.util.Set&lt;org.semanticweb.owlapi.model.OWLAnnotation&gt;">
+</parameter>
+</method>
+<method name="convertAP"
+ return="java.util.Collection&lt;eu.monnetproject.ontology.AnnotationProperty&gt;"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="vals" type="java.util.Set&lt;org.semanticweb.owlapi.model.OWLAnnotationProperty&gt;">
+</parameter>
+</method>
+<method name="convertAP2M"
+ return="java.util.Map&lt;eu.monnetproject.ontology.Property, java.util.Collection&lt;eu.monnetproject.ontology.LiteralOrIndividual&gt;&gt;"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="vals" type="java.util.Map&lt;org.semanticweb.owlapi.model.OWLAnnotationProperty, java.util.Set&lt;org.semanticweb.owlapi.model.OWLIndividual&gt;&gt;">
+</parameter>
+</method>
+<method name="convertAP2P"
+ return="java.util.Collection&lt;eu.monnetproject.ontology.Property&gt;"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="vals" type="java.util.Set&lt;org.semanticweb.owlapi.model.OWLAnnotationProperty&gt;">
+</parameter>
+</method>
+<method name="convertC"
+ return="java.util.Collection&lt;eu.monnetproject.ontology.Class&gt;"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="vals" type="java.util.Set&lt;org.semanticweb.owlapi.model.OWLClassExpression&gt;">
+</parameter>
+</method>
+<method name="convertD"
+ return="java.util.Collection&lt;eu.monnetproject.ontology.Datatype&gt;"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="vals" type="java.util.Set&lt;org.semanticweb.owlapi.model.OWLDataRange&gt;">
+</parameter>
+</method>
+<method name="convertDP"
+ return="java.util.Collection&lt;eu.monnetproject.ontology.DatatypeProperty&gt;"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="vals" type="java.util.Set&lt;org.semanticweb.owlapi.model.OWLDataPropertyExpression&gt;">
+</parameter>
+</method>
+<method name="convertDP2M"
+ return="java.util.Map&lt;eu.monnetproject.ontology.Property, java.util.Collection&lt;eu.monnetproject.ontology.LiteralOrIndividual&gt;&gt;"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="vals" type="java.util.Map&lt;org.semanticweb.owlapi.model.OWLDataPropertyExpression, java.util.Set&lt;org.semanticweb.owlapi.model.OWLLiteral&gt;&gt;">
+</parameter>
+</method>
+<method name="convertDP2P"
+ return="java.util.Collection&lt;eu.monnetproject.ontology.Property&gt;"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="vals" type="java.util.Set&lt;org.semanticweb.owlapi.model.OWLDataPropertyExpression&gt;">
+</parameter>
+</method>
+<method name="convertE"
+ return="java.util.Collection&lt;eu.monnetproject.ontology.Entity&gt;"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="protected"
+>
+<parameter name="ents" type="java.util.Set&lt;org.semanticweb.owlapi.model.OWLEntity&gt;">
+</parameter>
+</method>
+<method name="convertI"
+ return="java.util.Collection&lt;eu.monnetproject.ontology.Individual&gt;"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="vals" type="java.util.Set&lt;org.semanticweb.owlapi.model.OWLIndividual&gt;">
+</parameter>
+</method>
+<method name="convertL"
+ return="java.util.Collection&lt;eu.monnetproject.ontology.LiteralValue&gt;"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="vals" type="java.util.Set&lt;org.semanticweb.owlapi.model.OWLLiteral&gt;">
+</parameter>
+</method>
+<method name="convertLOI"
+ return="java.util.Collection&lt;eu.monnetproject.ontology.LiteralOrIndividual&gt;"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="vals" type="java.util.Set">
+</parameter>
+</method>
+<method name="convertOP"
+ return="java.util.Collection&lt;eu.monnetproject.ontology.ObjectProperty&gt;"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="vals" type="java.util.Set&lt;org.semanticweb.owlapi.model.OWLObjectPropertyExpression&gt;">
+</parameter>
+</method>
+<method name="convertOP2M"
+ return="java.util.Map&lt;eu.monnetproject.ontology.Property, java.util.Collection&lt;eu.monnetproject.ontology.LiteralOrIndividual&gt;&gt;"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="vals" type="java.util.Map&lt;org.semanticweb.owlapi.model.OWLObjectPropertyExpression, java.util.Set&lt;org.semanticweb.owlapi.model.OWLIndividual&gt;&gt;">
+</parameter>
+</method>
+<method name="convertOP2P"
+ return="java.util.Collection&lt;eu.monnetproject.ontology.Property&gt;"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="vals" type="java.util.Set&lt;org.semanticweb.owlapi.model.OWLObjectPropertyExpression&gt;">
+</parameter>
+</method>
+<method name="convertP"
+ return="java.util.Collection&lt;eu.monnetproject.ontology.Property&gt;"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="vals" type="java.util.Set&lt;org.semanticweb.owlapi.model.OWLPropertyExpression&gt;">
+</parameter>
+</method>
+<method name="entity"
+ return="org.semanticweb.owlapi.model.OWLEntity"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="protected"
+>
+</method>
+<method name="getDifferentFrom"
+ return="java.util.Collection&lt;eu.monnetproject.ontology.Individual&gt;"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="getProperties"
+ return="java.util.Map&lt;eu.monnetproject.ontology.Property, java.util.Collection&lt;eu.monnetproject.ontology.LiteralOrIndividual&gt;&gt;"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="getPropertyValues"
+ return="java.util.Collection&lt;eu.monnetproject.ontology.LiteralOrIndividual&gt;"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="property" type="eu.monnetproject.ontology.Property">
+</parameter>
+</method>
+<method name="getReferringProperty"
+ return="java.util.Map&lt;eu.monnetproject.ontology.Property, java.util.Collection&lt;eu.monnetproject.ontology.Individual&gt;&gt;"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="getReferringPropertyValues"
+ return="java.util.Collection&lt;eu.monnetproject.ontology.Individual&gt;"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="property" type="eu.monnetproject.ontology.Property">
+</parameter>
+</method>
+<method name="getSameAs"
+ return="java.util.Collection&lt;eu.monnetproject.ontology.Individual&gt;"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="getType"
+ return="java.util.Collection&lt;eu.monnetproject.ontology.Class&gt;"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="removeDifferentFrom"
+ return="boolean"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="individual" type="eu.monnetproject.ontology.Individual">
+</parameter>
+</method>
+<method name="removeProperty"
+ return="boolean"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="property" type="eu.monnetproject.ontology.Property">
+</parameter>
+<parameter name="value" type="eu.monnetproject.ontology.LiteralOrIndividual">
+</parameter>
+</method>
+<method name="removeSameAs"
+ return="boolean"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="individual" type="eu.monnetproject.ontology.Individual">
+</parameter>
+</method>
+<method name="removeType"
+ return="boolean"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="clazz" type="eu.monnetproject.ontology.Class">
+</parameter>
+</method>
+<field name="onto"
+ type="org.semanticweb.owlapi.model.OWLOntology"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="protected"
+>
+</field>
+</class>
+<class name="OWLAPILiteralValue"
+ extends="java.lang.Object"
+ abstract="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<implements name="eu.monnetproject.ontology.LiteralValue">
+</implements>
+<constructor name="OWLAPILiteralValue"
+ type="eu.monnetproject.ontology.owlapi.OWLAPILiteralValue"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="wrapped" type="org.semanticweb.owlapi.model.OWLLiteral">
+</parameter>
+<parameter name="onto" type="org.semanticweb.owlapi.model.OWLOntology">
+</parameter>
+</constructor>
+<method name="getDatatype"
+ return="eu.monnetproject.ontology.Datatype"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="getLanguage"
+ return="eu.monnetproject.lang.Language"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="getValue"
+ return="java.lang.String"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<field name="factory"
+ type="org.semanticweb.owlapi.model.OWLDataFactory"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="true"
+ deprecated="not deprecated"
+ visibility="protected"
+>
+</field>
+<field name="manager"
+ type="org.semanticweb.owlapi.model.OWLOntologyManager"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="true"
+ deprecated="not deprecated"
+ visibility="protected"
+>
+</field>
+<field name="onto"
+ type="org.semanticweb.owlapi.model.OWLOntology"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="true"
+ deprecated="not deprecated"
+ visibility="protected"
+>
+</field>
+</class>
+<class name="OWLAPIObjectProperty"
+ extends="eu.monnetproject.ontology.owlapi.OWLAPIEntity"
+ abstract="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<implements name="eu.monnetproject.ontology.ObjectProperty">
+</implements>
+<constructor name="OWLAPIObjectProperty"
+ type="eu.monnetproject.ontology.owlapi.OWLAPIObjectProperty"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="wrapped" type="org.semanticweb.owlapi.model.OWLObjectProperty">
+</parameter>
+<parameter name="onto" type="org.semanticweb.owlapi.model.OWLOntology">
+</parameter>
+</constructor>
+<method name="addDomain"
+ return="boolean"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="clazz" type="eu.monnetproject.ontology.Class">
+</parameter>
+</method>
+<method name="addEquivalentProperty"
+ return="boolean"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="property" type="eu.monnetproject.ontology.Property">
+</parameter>
+</method>
+<method name="addInverseOf"
+ return="boolean"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="property" type="eu.monnetproject.ontology.ObjectProperty">
+</parameter>
+</method>
+<method name="addRange"
+ return="boolean"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="clazzOrDatatype" type="eu.monnetproject.ontology.ClassOrDatatype">
+</parameter>
+</method>
+<method name="addSubPropertyOf"
+ return="boolean"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="property" type="eu.monnetproject.ontology.Property">
+</parameter>
+</method>
+<method name="convertA"
+ return="java.util.Collection&lt;eu.monnetproject.ontology.AnnotationValue&gt;"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="vals" type="java.util.Set&lt;org.semanticweb.owlapi.model.OWLAnnotation&gt;">
+</parameter>
+</method>
+<method name="convertA2LOI"
+ return="java.util.Collection&lt;eu.monnetproject.ontology.LiteralOrIndividual&gt;"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="vals" type="java.util.Set&lt;org.semanticweb.owlapi.model.OWLAnnotation&gt;">
+</parameter>
+</method>
+<method name="convertAP"
+ return="java.util.Collection&lt;eu.monnetproject.ontology.AnnotationProperty&gt;"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="vals" type="java.util.Set&lt;org.semanticweb.owlapi.model.OWLAnnotationProperty&gt;">
+</parameter>
+</method>
+<method name="convertAP2M"
+ return="java.util.Map&lt;eu.monnetproject.ontology.Property, java.util.Collection&lt;eu.monnetproject.ontology.LiteralOrIndividual&gt;&gt;"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="vals" type="java.util.Map&lt;org.semanticweb.owlapi.model.OWLAnnotationProperty, java.util.Set&lt;org.semanticweb.owlapi.model.OWLIndividual&gt;&gt;">
+</parameter>
+</method>
+<method name="convertAP2P"
+ return="java.util.Collection&lt;eu.monnetproject.ontology.Property&gt;"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="vals" type="java.util.Set&lt;org.semanticweb.owlapi.model.OWLAnnotationProperty&gt;">
+</parameter>
+</method>
+<method name="convertC"
+ return="java.util.Collection&lt;eu.monnetproject.ontology.Class&gt;"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="vals" type="java.util.Set&lt;org.semanticweb.owlapi.model.OWLClassExpression&gt;">
+</parameter>
+</method>
+<method name="convertD"
+ return="java.util.Collection&lt;eu.monnetproject.ontology.Datatype&gt;"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="vals" type="java.util.Set&lt;org.semanticweb.owlapi.model.OWLDataRange&gt;">
+</parameter>
+</method>
+<method name="convertDP"
+ return="java.util.Collection&lt;eu.monnetproject.ontology.DatatypeProperty&gt;"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="vals" type="java.util.Set&lt;org.semanticweb.owlapi.model.OWLDataPropertyExpression&gt;">
+</parameter>
+</method>
+<method name="convertDP2M"
+ return="java.util.Map&lt;eu.monnetproject.ontology.Property, java.util.Collection&lt;eu.monnetproject.ontology.LiteralOrIndividual&gt;&gt;"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="vals" type="java.util.Map&lt;org.semanticweb.owlapi.model.OWLDataPropertyExpression, java.util.Set&lt;org.semanticweb.owlapi.model.OWLLiteral&gt;&gt;">
+</parameter>
+</method>
+<method name="convertDP2P"
+ return="java.util.Collection&lt;eu.monnetproject.ontology.Property&gt;"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="vals" type="java.util.Set&lt;org.semanticweb.owlapi.model.OWLDataPropertyExpression&gt;">
+</parameter>
+</method>
+<method name="convertE"
+ return="java.util.Collection&lt;eu.monnetproject.ontology.Entity&gt;"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="protected"
+>
+<parameter name="ents" type="java.util.Set&lt;org.semanticweb.owlapi.model.OWLEntity&gt;">
+</parameter>
+</method>
+<method name="convertI"
+ return="java.util.Collection&lt;eu.monnetproject.ontology.Individual&gt;"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="vals" type="java.util.Set&lt;org.semanticweb.owlapi.model.OWLIndividual&gt;">
+</parameter>
+</method>
+<method name="convertL"
+ return="java.util.Collection&lt;eu.monnetproject.ontology.LiteralValue&gt;"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="vals" type="java.util.Set&lt;org.semanticweb.owlapi.model.OWLLiteral&gt;">
+</parameter>
+</method>
+<method name="convertLOI"
+ return="java.util.Collection&lt;eu.monnetproject.ontology.LiteralOrIndividual&gt;"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="vals" type="java.util.Set">
+</parameter>
+</method>
+<method name="convertOP"
+ return="java.util.Collection&lt;eu.monnetproject.ontology.ObjectProperty&gt;"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="vals" type="java.util.Set&lt;org.semanticweb.owlapi.model.OWLObjectPropertyExpression&gt;">
+</parameter>
+</method>
+<method name="convertOP2M"
+ return="java.util.Map&lt;eu.monnetproject.ontology.Property, java.util.Collection&lt;eu.monnetproject.ontology.LiteralOrIndividual&gt;&gt;"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="vals" type="java.util.Map&lt;org.semanticweb.owlapi.model.OWLObjectPropertyExpression, java.util.Set&lt;org.semanticweb.owlapi.model.OWLIndividual&gt;&gt;">
+</parameter>
+</method>
+<method name="convertOP2P"
+ return="java.util.Collection&lt;eu.monnetproject.ontology.Property&gt;"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="vals" type="java.util.Set&lt;org.semanticweb.owlapi.model.OWLObjectPropertyExpression&gt;">
+</parameter>
+</method>
+<method name="convertP"
+ return="java.util.Collection&lt;eu.monnetproject.ontology.Property&gt;"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="vals" type="java.util.Set&lt;org.semanticweb.owlapi.model.OWLPropertyExpression&gt;">
+</parameter>
+</method>
+<method name="entity"
+ return="org.semanticweb.owlapi.model.OWLEntity"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="protected"
+>
+</method>
+<method name="getDomain"
+ return="java.util.Collection&lt;eu.monnetproject.ontology.Class&gt;"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="getEquivalentProperty"
+ return="java.util.Collection&lt;eu.monnetproject.ontology.Property&gt;"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="getInverseOf"
+ return="java.util.Collection&lt;eu.monnetproject.ontology.ObjectProperty&gt;"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="getRange"
+ return="java.util.Collection&lt;eu.monnetproject.ontology.Class&gt;"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="getSubPropertyOf"
+ return="java.util.Collection&lt;eu.monnetproject.ontology.Property&gt;"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="getSuperPropertyOf"
+ return="java.util.Collection&lt;eu.monnetproject.ontology.Property&gt;"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="prop"
+ return="org.semanticweb.owlapi.model.OWLObjectProperty"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="protected"
+>
+</method>
+<method name="removeDomain"
+ return="boolean"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="clazz" type="eu.monnetproject.ontology.Class">
+</parameter>
+</method>
+<method name="removeEquivalentProperty"
+ return="boolean"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="property" type="eu.monnetproject.ontology.Property">
+</parameter>
+</method>
+<method name="removeInverseOf"
+ return="boolean"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="property" type="eu.monnetproject.ontology.ObjectProperty">
+</parameter>
+</method>
+<method name="removeRange"
+ return="boolean"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="clazzOrDatatype" type="eu.monnetproject.ontology.ClassOrDatatype">
+</parameter>
+</method>
+<method name="removeSubPropertyOf"
+ return="boolean"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="property" type="eu.monnetproject.ontology.Property">
+</parameter>
+</method>
+<field name="onto"
+ type="org.semanticweb.owlapi.model.OWLOntology"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="protected"
+>
+</field>
+</class>
+<class name="OWLAPIOntology"
+ extends="eu.monnetproject.ontology.owlapi.OWLAPI"
+ abstract="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<implements name="eu.monnetproject.ontology.Ontology">
+</implements>
+<constructor name="OWLAPIOntology"
+ type="eu.monnetproject.ontology.owlapi.OWLAPIOntology"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="onto" type="org.semanticweb.owlapi.model.OWLOntology">
+</parameter>
+<parameter name="factory" type="org.semanticweb.owlapi.model.OWLDataFactory">
+</parameter>
+</constructor>
+<method name="addAnnotationProperty"
+ return="boolean"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="ap" type="eu.monnetproject.ontology.AnnotationProperty">
+</parameter>
+</method>
+<method name="addClass"
+ return="boolean"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="type" type="eu.monnetproject.ontology.Class">
+</parameter>
+</method>
+<method name="addDatatypeProperty"
+ return="boolean"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="dp" type="eu.monnetproject.ontology.DatatypeProperty">
+</parameter>
+</method>
+<method name="addIndividual"
+ return="boolean"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="indvdl" type="eu.monnetproject.ontology.Individual">
+</parameter>
+</method>
+<method name="addObjectProperty"
+ return="boolean"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="op" type="eu.monnetproject.ontology.ObjectProperty">
+</parameter>
+</method>
+<method name="convertA"
+ return="java.util.Collection&lt;eu.monnetproject.ontology.AnnotationValue&gt;"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="vals" type="java.util.Set&lt;org.semanticweb.owlapi.model.OWLAnnotation&gt;">
+</parameter>
+</method>
+<method name="convertA2LOI"
+ return="java.util.Collection&lt;eu.monnetproject.ontology.LiteralOrIndividual&gt;"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="vals" type="java.util.Set&lt;org.semanticweb.owlapi.model.OWLAnnotation&gt;">
+</parameter>
+</method>
+<method name="convertAP"
+ return="java.util.Collection&lt;eu.monnetproject.ontology.AnnotationProperty&gt;"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="vals" type="java.util.Set&lt;org.semanticweb.owlapi.model.OWLAnnotationProperty&gt;">
+</parameter>
+</method>
+<method name="convertAP2M"
+ return="java.util.Map&lt;eu.monnetproject.ontology.Property, java.util.Collection&lt;eu.monnetproject.ontology.LiteralOrIndividual&gt;&gt;"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="vals" type="java.util.Map&lt;org.semanticweb.owlapi.model.OWLAnnotationProperty, java.util.Set&lt;org.semanticweb.owlapi.model.OWLIndividual&gt;&gt;">
+</parameter>
+</method>
+<method name="convertAP2P"
+ return="java.util.Collection&lt;eu.monnetproject.ontology.Property&gt;"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="vals" type="java.util.Set&lt;org.semanticweb.owlapi.model.OWLAnnotationProperty&gt;">
+</parameter>
+</method>
+<method name="convertC"
+ return="java.util.Collection&lt;eu.monnetproject.ontology.Class&gt;"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="vals" type="java.util.Set&lt;org.semanticweb.owlapi.model.OWLClassExpression&gt;">
+</parameter>
+</method>
+<method name="convertD"
+ return="java.util.Collection&lt;eu.monnetproject.ontology.Datatype&gt;"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="vals" type="java.util.Set&lt;org.semanticweb.owlapi.model.OWLDataRange&gt;">
+</parameter>
+</method>
+<method name="convertDP"
+ return="java.util.Collection&lt;eu.monnetproject.ontology.DatatypeProperty&gt;"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="vals" type="java.util.Set&lt;org.semanticweb.owlapi.model.OWLDataPropertyExpression&gt;">
+</parameter>
+</method>
+<method name="convertDP2M"
+ return="java.util.Map&lt;eu.monnetproject.ontology.Property, java.util.Collection&lt;eu.monnetproject.ontology.LiteralOrIndividual&gt;&gt;"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="vals" type="java.util.Map&lt;org.semanticweb.owlapi.model.OWLDataPropertyExpression, java.util.Set&lt;org.semanticweb.owlapi.model.OWLLiteral&gt;&gt;">
+</parameter>
+</method>
+<method name="convertDP2P"
+ return="java.util.Collection&lt;eu.monnetproject.ontology.Property&gt;"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="vals" type="java.util.Set&lt;org.semanticweb.owlapi.model.OWLDataPropertyExpression&gt;">
+</parameter>
+</method>
+<method name="convertE"
+ return="java.util.Collection&lt;eu.monnetproject.ontology.Entity&gt;"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="protected"
+>
+<parameter name="ents" type="java.util.Set&lt;org.semanticweb.owlapi.model.OWLEntity&gt;">
+</parameter>
+</method>
+<method name="convertI"
+ return="java.util.Collection&lt;eu.monnetproject.ontology.Individual&gt;"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="vals" type="java.util.Set&lt;org.semanticweb.owlapi.model.OWLIndividual&gt;">
+</parameter>
+</method>
+<method name="convertL"
+ return="java.util.Collection&lt;eu.monnetproject.ontology.LiteralValue&gt;"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="vals" type="java.util.Set&lt;org.semanticweb.owlapi.model.OWLLiteral&gt;">
+</parameter>
+</method>
+<method name="convertLOI"
+ return="java.util.Collection&lt;eu.monnetproject.ontology.LiteralOrIndividual&gt;"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="vals" type="java.util.Set">
+</parameter>
+</method>
+<method name="convertOP"
+ return="java.util.Collection&lt;eu.monnetproject.ontology.ObjectProperty&gt;"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="vals" type="java.util.Set&lt;org.semanticweb.owlapi.model.OWLObjectPropertyExpression&gt;">
+</parameter>
+</method>
+<method name="convertOP2M"
+ return="java.util.Map&lt;eu.monnetproject.ontology.Property, java.util.Collection&lt;eu.monnetproject.ontology.LiteralOrIndividual&gt;&gt;"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="vals" type="java.util.Map&lt;org.semanticweb.owlapi.model.OWLObjectPropertyExpression, java.util.Set&lt;org.semanticweb.owlapi.model.OWLIndividual&gt;&gt;">
+</parameter>
+</method>
+<method name="convertOP2P"
+ return="java.util.Collection&lt;eu.monnetproject.ontology.Property&gt;"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="vals" type="java.util.Set&lt;org.semanticweb.owlapi.model.OWLObjectPropertyExpression&gt;">
+</parameter>
+</method>
+<method name="convertP"
+ return="java.util.Collection&lt;eu.monnetproject.ontology.Property&gt;"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="vals" type="java.util.Set&lt;org.semanticweb.owlapi.model.OWLPropertyExpression&gt;">
+</parameter>
+</method>
+<method name="getAnnotationProperties"
+ return="java.util.Collection&lt;eu.monnetproject.ontology.AnnotationProperty&gt;"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="getBaseURI"
+ return="java.net.URI"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="getClasses"
+ return="java.util.Collection&lt;eu.monnetproject.ontology.Class&gt;"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="getDataSource"
+ return="eu.monnetproject.data.DataSource"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="getDatatypeProperties"
+ return="java.util.Collection&lt;eu.monnetproject.ontology.DatatypeProperty&gt;"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="getEntities"
+ return="java.util.Collection&lt;eu.monnetproject.ontology.Entity&gt;"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="getEntities"
+ return="java.util.Collection&lt;eu.monnetproject.ontology.Entity&gt;"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="uri" type="java.net.URI">
+</parameter>
+</method>
+<method name="getFactory"
+ return="eu.monnetproject.ontology.OntologyFactory"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="getIndividuals"
+ return="java.util.Collection&lt;eu.monnetproject.ontology.Individual&gt;"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="getObjectProperties"
+ return="java.util.Collection&lt;eu.monnetproject.ontology.ObjectProperty&gt;"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="getProperties"
+ return="java.util.Collection&lt;eu.monnetproject.ontology.Property&gt;"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="getURI"
+ return="java.net.URI"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="removeAllAxioms"
+ return="boolean"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="removeAnnotationProperty"
+ return="boolean"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="ap" type="eu.monnetproject.ontology.AnnotationProperty">
+</parameter>
+</method>
+<method name="removeClass"
+ return="boolean"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="type" type="eu.monnetproject.ontology.Class">
+</parameter>
+</method>
+<method name="removeDatatypeProperty"
+ return="boolean"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="dp" type="eu.monnetproject.ontology.DatatypeProperty">
+</parameter>
+</method>
+<method name="removeIndividual"
+ return="boolean"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="indvdl" type="eu.monnetproject.ontology.Individual">
+</parameter>
+</method>
+<method name="removeObjectProperty"
+ return="boolean"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="op" type="eu.monnetproject.ontology.ObjectProperty">
+</parameter>
+</method>
+<method name="setDataSource"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="dataSource" type="eu.monnetproject.data.DataSource">
+</parameter>
+</method>
+<field name="onto"
+ type="org.semanticweb.owlapi.model.OWLOntology"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="protected"
+>
+</field>
+</class>
+<class name="OWLAPIOntology.OWLAPIOntologyFactory"
+ extends="java.lang.Object"
+ abstract="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<implements name="eu.monnetproject.ontology.OntologyFactory">
+</implements>
+<constructor name="OWLAPIOntology.OWLAPIOntologyFactory"
+ type="eu.monnetproject.ontology.owlapi.OWLAPIOntology.OWLAPIOntologyFactory"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</constructor>
+<method name="makeAnnotationProperty"
+ return="eu.monnetproject.ontology.AnnotationProperty"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="uri" type="java.net.URI">
+</parameter>
+</method>
+<method name="makeClass"
+ return="eu.monnetproject.ontology.Class"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="makeClass"
+ return="eu.monnetproject.ontology.Class"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="uri" type="java.net.URI">
+</parameter>
+</method>
+<method name="makeDatatype"
+ return="eu.monnetproject.ontology.Datatype"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="uri" type="java.net.URI">
+</parameter>
+</method>
+<method name="makeDatatypeHasValueRestriction"
+ return="eu.monnetproject.ontology.Restriction"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="dp" type="eu.monnetproject.ontology.DatatypeProperty">
+</parameter>
+<parameter name="lv" type="eu.monnetproject.ontology.LiteralValue">
+</parameter>
+</method>
+<method name="makeDatatypeProperty"
+ return="eu.monnetproject.ontology.DatatypeProperty"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="uri" type="java.net.URI">
+</parameter>
+</method>
+<method name="makeIndividual"
+ return="eu.monnetproject.ontology.Individual"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="makeIndividual"
+ return="eu.monnetproject.ontology.Individual"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="uri" type="java.net.URI">
+</parameter>
+</method>
+<method name="makeLiteral"
+ return="eu.monnetproject.ontology.LiteralValue"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="value" type="java.lang.String">
+</parameter>
+</method>
+<method name="makeLiteralWithDatatype"
+ return="eu.monnetproject.ontology.LiteralValue"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="value" type="java.lang.String">
+</parameter>
+<parameter name="datatype" type="eu.monnetproject.ontology.Datatype">
+</parameter>
+</method>
+<method name="makeLiteralWithLanguage"
+ return="eu.monnetproject.ontology.LiteralValue"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="value" type="java.lang.String">
+</parameter>
+<parameter name="language" type="eu.monnetproject.lang.Language">
+</parameter>
+</method>
+<method name="makeObjectHasValueRestriction"
+ return="eu.monnetproject.ontology.Restriction"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="op" type="eu.monnetproject.ontology.ObjectProperty">
+</parameter>
+<parameter name="indvdl" type="eu.monnetproject.ontology.Individual">
+</parameter>
+</method>
+<method name="makeObjectProperty"
+ return="eu.monnetproject.ontology.ObjectProperty"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="uri" type="java.net.URI">
+</parameter>
+</method>
+</class>
+<class name="OWLAPIRestriction"
+ extends="eu.monnetproject.ontology.owlapi.OWLAPIClass"
+ abstract="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<implements name="eu.monnetproject.ontology.Restriction">
+</implements>
+<constructor name="OWLAPIRestriction"
+ type="eu.monnetproject.ontology.owlapi.OWLAPIRestriction"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="rest" type="org.semanticweb.owlapi.model.OWLRestriction">
+</parameter>
+<parameter name="onto" type="org.semanticweb.owlapi.model.OWLOntology">
+</parameter>
+</constructor>
+<method name="convertA"
+ return="java.util.Collection&lt;eu.monnetproject.ontology.AnnotationValue&gt;"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="vals" type="java.util.Set&lt;org.semanticweb.owlapi.model.OWLAnnotation&gt;">
+</parameter>
+</method>
+<method name="convertA2LOI"
+ return="java.util.Collection&lt;eu.monnetproject.ontology.LiteralOrIndividual&gt;"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="vals" type="java.util.Set&lt;org.semanticweb.owlapi.model.OWLAnnotation&gt;">
+</parameter>
+</method>
+<method name="convertAP"
+ return="java.util.Collection&lt;eu.monnetproject.ontology.AnnotationProperty&gt;"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="vals" type="java.util.Set&lt;org.semanticweb.owlapi.model.OWLAnnotationProperty&gt;">
+</parameter>
+</method>
+<method name="convertAP2M"
+ return="java.util.Map&lt;eu.monnetproject.ontology.Property, java.util.Collection&lt;eu.monnetproject.ontology.LiteralOrIndividual&gt;&gt;"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="vals" type="java.util.Map&lt;org.semanticweb.owlapi.model.OWLAnnotationProperty, java.util.Set&lt;org.semanticweb.owlapi.model.OWLIndividual&gt;&gt;">
+</parameter>
+</method>
+<method name="convertAP2P"
+ return="java.util.Collection&lt;eu.monnetproject.ontology.Property&gt;"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="vals" type="java.util.Set&lt;org.semanticweb.owlapi.model.OWLAnnotationProperty&gt;">
+</parameter>
+</method>
+<method name="convertC"
+ return="java.util.Collection&lt;eu.monnetproject.ontology.Class&gt;"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="vals" type="java.util.Set&lt;org.semanticweb.owlapi.model.OWLClassExpression&gt;">
+</parameter>
+</method>
+<method name="convertD"
+ return="java.util.Collection&lt;eu.monnetproject.ontology.Datatype&gt;"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="vals" type="java.util.Set&lt;org.semanticweb.owlapi.model.OWLDataRange&gt;">
+</parameter>
+</method>
+<method name="convertDP"
+ return="java.util.Collection&lt;eu.monnetproject.ontology.DatatypeProperty&gt;"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="vals" type="java.util.Set&lt;org.semanticweb.owlapi.model.OWLDataPropertyExpression&gt;">
+</parameter>
+</method>
+<method name="convertDP2M"
+ return="java.util.Map&lt;eu.monnetproject.ontology.Property, java.util.Collection&lt;eu.monnetproject.ontology.LiteralOrIndividual&gt;&gt;"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="vals" type="java.util.Map&lt;org.semanticweb.owlapi.model.OWLDataPropertyExpression, java.util.Set&lt;org.semanticweb.owlapi.model.OWLLiteral&gt;&gt;">
+</parameter>
+</method>
+<method name="convertDP2P"
+ return="java.util.Collection&lt;eu.monnetproject.ontology.Property&gt;"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="vals" type="java.util.Set&lt;org.semanticweb.owlapi.model.OWLDataPropertyExpression&gt;">
+</parameter>
+</method>
+<method name="convertE"
+ return="java.util.Collection&lt;eu.monnetproject.ontology.Entity&gt;"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="protected"
+>
+<parameter name="ents" type="java.util.Set&lt;org.semanticweb.owlapi.model.OWLEntity&gt;">
+</parameter>
+</method>
+<method name="convertI"
+ return="java.util.Collection&lt;eu.monnetproject.ontology.Individual&gt;"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="vals" type="java.util.Set&lt;org.semanticweb.owlapi.model.OWLIndividual&gt;">
+</parameter>
+</method>
+<method name="convertL"
+ return="java.util.Collection&lt;eu.monnetproject.ontology.LiteralValue&gt;"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="vals" type="java.util.Set&lt;org.semanticweb.owlapi.model.OWLLiteral&gt;">
+</parameter>
+</method>
+<method name="convertLOI"
+ return="java.util.Collection&lt;eu.monnetproject.ontology.LiteralOrIndividual&gt;"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="vals" type="java.util.Set">
+</parameter>
+</method>
+<method name="convertOP"
+ return="java.util.Collection&lt;eu.monnetproject.ontology.ObjectProperty&gt;"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="vals" type="java.util.Set&lt;org.semanticweb.owlapi.model.OWLObjectPropertyExpression&gt;">
+</parameter>
+</method>
+<method name="convertOP2M"
+ return="java.util.Map&lt;eu.monnetproject.ontology.Property, java.util.Collection&lt;eu.monnetproject.ontology.LiteralOrIndividual&gt;&gt;"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="vals" type="java.util.Map&lt;org.semanticweb.owlapi.model.OWLObjectPropertyExpression, java.util.Set&lt;org.semanticweb.owlapi.model.OWLIndividual&gt;&gt;">
+</parameter>
+</method>
+<method name="convertOP2P"
+ return="java.util.Collection&lt;eu.monnetproject.ontology.Property&gt;"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="vals" type="java.util.Set&lt;org.semanticweb.owlapi.model.OWLObjectPropertyExpression&gt;">
+</parameter>
+</method>
+<method name="convertP"
+ return="java.util.Collection&lt;eu.monnetproject.ontology.Property&gt;"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="vals" type="java.util.Set&lt;org.semanticweb.owlapi.model.OWLPropertyExpression&gt;">
+</parameter>
+</method>
+<method name="getHasValue"
+ return="eu.monnetproject.ontology.LiteralOrIndividual"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="getOnProperty"
+ return="eu.monnetproject.ontology.Property"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<field name="onto"
+ type="org.semanticweb.owlapi.model.OWLOntology"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="protected"
+>
+</field>
+</class>
+<class name="OWLAPISerializer"
+ extends="java.lang.Object"
+ abstract="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<constructor name="OWLAPISerializer"
+ type="eu.monnetproject.ontology.owlapi.OWLAPISerializer"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</constructor>
+<method name="create"
+ return="eu.monnetproject.ontology.Ontology"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="uri" type="java.net.URI">
+</parameter>
+</method>
+<method name="read"
+ return="eu.monnetproject.ontology.Ontology"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="source" type="eu.monnetproject.data.DataSource">
+</parameter>
+</method>
+<method name="write"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="ontology" type="eu.monnetproject.ontology.Ontology">
+</parameter>
+<parameter name="target" type="eu.monnetproject.data.DataTarget">
+</parameter>
+</method>
+<method name="write"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="ontology" type="eu.monnetproject.ontology.Ontology">
+</parameter>
+<parameter name="target" type="eu.monnetproject.data.DataTarget">
+</parameter>
+<parameter name="format" type="java.lang.String">
+</parameter>
+</method>
+</class>
+</package>
+</api>
