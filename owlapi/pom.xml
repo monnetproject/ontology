@@ -4,14 +4,14 @@
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <groupId>eu.monnetproject</groupId>
-        <artifactId>project</artifactId>
+        <artifactId>ontology.project</artifactId>
         <version>1.13.1-SNAPSHOT</version>
         <relativePath>..</relativePath>
     </parent>
     <artifactId>nlp.owlapi</artifactId>
     <packaging>bundle</packaging>
 
-    <name>eu.monnetproject.nlp.owlapi OSGi Bundle</name>
+    <name>eu.monnetproject.ontology.owlapi OSGi Bundle</name>
 
     <repositories>
         <repository>

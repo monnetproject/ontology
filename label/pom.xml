@@ -5,14 +5,14 @@
 
     <parent>
         <groupId>eu.monnetproject</groupId>
-        <artifactId>project</artifactId>
+        <artifactId>ontology.project</artifactId>
         <version>1.13.1-SNAPSHOT</version>
         <relativePath>..</relativePath>
     </parent>
     <artifactId>nlp.label</artifactId>
     <packaging>bundle</packaging>
 
-    <name>eu.monnetproject.nlp.label OSGi Bundle</name>
+    <name>eu.monnetproject.ontology.label OSGi Bundle</name>
        
     <dependencies>
         <dependency>
