@@ -28,9 +28,17 @@ import eu.monnetproject.ontology.OntologySerializer;
 @Component(provide=OntologySerializer.class)
 public class OWLAPISerializer implements OntologySerializer {
 
-    private final OWLOntologyManager manager = OWLManager.createOWLOntologyManager();
-    private final OWLDataFactory factory = manager.getOWLDataFactory();
+    private final OWLOntologyManager manager;
+    private final OWLDataFactory factory;
 
+    public OWLAPISerializer() {
+       this.manager = OWLManager.createOWLOntologyManager();
+       manager.setSilentMissingImportsHandling(true);
+       this.factory = manager.getOWLDataFactory();
+    }
+
+    
+    
     @Override
     public Ontology create(URI uri) {
         try {
@@ -120,7 +128,6 @@ public class OWLAPISerializer implements OntologySerializer {
         } catch (OWLOntologyAlreadyExistsException x) {
             owlapiOnto = new OWLAPIOntology(manager.getOntology(x.getOntologyID()), factory);
         } catch (Exception x3) {
-//            log.stackTrace(x3);
             throw new RuntimeException("Could not read OWL ontology");
         }
 
