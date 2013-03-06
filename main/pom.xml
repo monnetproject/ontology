@@ -4,12 +4,12 @@
     <parent>
         <artifactId>ontology.project</artifactId>
         <groupId>eu.monnetproject</groupId>
-        <version>1.13.1-SNAPSHOT</version>
+        <version>1.13.3</version>
         <relativePath>..</relativePath>
     </parent>
 
     <artifactId>ontology</artifactId>
-    <version>1.13.1-SNAPSHOT</version>
+    <version>1.13.3</version>
     <packaging>bundle</packaging>
 
     <name>eu.monnetproject.ontology OSGi Bundle</name>
