@@ -3,7 +3,7 @@
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <artifactId>ontology.project</artifactId>
-        <groupId>eu.monnetproject</groupId>
+        <groupId>com.github.monnetproject</groupId>
         <version>1.13.3</version>
         <relativePath>..</relativePath>
     </parent>
@@ -12,7 +12,7 @@
     <version>1.13.3</version>
     <packaging>bundle</packaging>
 
-    <name>eu.monnetproject.ontology OSGi Bundle</name>
+    <name>com.github.monnetproject.ontology OSGi Bundle</name>
     <dependencies>
         <dependency>
             <groupId>${project.groupId}</groupId>
