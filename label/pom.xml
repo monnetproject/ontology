@@ -33,7 +33,7 @@
             <scope>provided</scope>
         </dependency>
         <dependency>
-            <groupId>org.knallgrau</groupId>
+            <groupId>org.knallgrau.utils</groupId>
             <artifactId>textcat</artifactId>
             <version>1.0.1</version>
         </dependency>
